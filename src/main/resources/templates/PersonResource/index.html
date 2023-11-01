@@ -1,0 +1,26 @@
+{#include layout}
+    {#title}Listagem{/title}
+    <div class="container mt-4">
+    <h1>Lista de Pessoas</h1>
+    <table class="table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>CPF</th>
+    </tr>
+    </thead>
+    <tbody>
+    {#for person in persons}
+        <tr>
+        <td>{person.id}</td>
+        <td>{person.name}</td>
+        <td>{person.email}</td>
+        <td>{person.cpf}</td>
+        </tr>
+    {/for}
+    </tbody>
+    </table>
+    </div>
+{/include}

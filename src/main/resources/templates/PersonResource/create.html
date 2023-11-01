@@ -1,0 +1,28 @@
+{#include layout}
+    {#title}Criar{/title}
+    <div class="container-fluid">
+        <h2>Cadastrar Pessoa</h2>
+        <form action="http://localhost:8080/save" method="POST">
+            <div class="gap-2">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name">
+            </div>
+            <div>
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" name="email">
+            </div>
+            <div>
+                <label for="cpf" class="form-label">CPF</label>
+                <input type="text" class="form-control" id="cpf" name="cpf">
+            </div>
+            <div>
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" name="password">
+            </div>
+
+            <div class="d-flex align-items-center justify-content-end mt-3">
+                <button type="submit" class="btn btn-primary">Cadastrar</button>
+            </div>
+        </form>
+    </div>
+{/include}
